@@ -1,6 +1,4 @@
-import { defineNuxtConfig } from '@nuxt/bridge'
-
-export default defineNuxtConfig({
+export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'coffee-commerce',
@@ -86,4 +84,4 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vee-validate/dist/rules'],
   },
-})
+}
