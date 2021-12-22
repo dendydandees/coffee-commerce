@@ -6,7 +6,10 @@
       </b-navbar-brand>
 
       <b-navbar-nav class="ml-auto">
-        <b-nav-form @submit.stop.prevent="searchProduct">
+        <b-nav-form
+          v-if="$route.name === 'index'"
+          @submit.stop.prevent="searchProduct"
+        >
           <b-form-input
             v-model="search"
             placeholder="Cari Produk"
